@@ -25,7 +25,7 @@ const getHeaders = (filePath, fileName) => {
   }
 
   return {
-    'content-type': options[extension],
+    'content-type': options[extension] || 'application/octet-stream',
     'content-length': size
   }
 }
